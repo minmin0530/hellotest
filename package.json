@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "typ-check": "tsc --noEmit",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint index.js $(find src -name '*.ts' -a -not -name '*.d.ts' -o -name '*.tsx')",
+    "coverage": "jest --coverage"
   },
   "dependencies": {
     "react": "16.13.1",
