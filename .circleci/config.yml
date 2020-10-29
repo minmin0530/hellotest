@@ -1,6 +1,6 @@
 # /.circleci/config.yml
 # refer:https://circleci.com/docs/2.1/languagejavascript/
-version:2.1
+version: 2.1
 
 executors:
   nodelts:
